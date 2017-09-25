@@ -1,5 +1,5 @@
 # typescript-blog-tutorial
-A TypeScript blog tutorial for my Azubis
+A TypeScript blog tutorial to learn Typescript
 
 This tutorial is to get started with [TypeScript](https://www.typescriptlang.org). This project uses [Jest](https://facebook.github.io/jest/)
 for *Painless ~~JavaScript~~ TypeScript Testing* and [Yarn](https://yarnpkg.com/en/docs/install) for contemporary package management.
@@ -7,7 +7,7 @@ for *Painless ~~JavaScript~~ TypeScript Testing* and [Yarn](https://yarnpkg.com/
 ## Setup
 
 ```
-$ > git clone git@github.com:Partyschaum/typescript-blog-tutorial.git
+$ > git clone git@github.com:SharktheFire/typescript-blog-tutorial.git
 
 $ > yarn install
 ```
