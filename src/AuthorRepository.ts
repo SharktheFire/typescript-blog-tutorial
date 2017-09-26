@@ -2,7 +2,7 @@ import Author from './Author'
 
 export default class AuthorRepository {
 
-    private authors: Author []
+    private authors: Author[]
 
     public constructor() {
         this.authors = []
