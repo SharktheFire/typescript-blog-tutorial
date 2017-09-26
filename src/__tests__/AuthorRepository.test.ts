@@ -14,9 +14,11 @@ describe('AuthorRepository', () => {
   })
 
   it('finds author by surname', () => {
-    const author = new Author('Tom', 'Tasty')
-    repository.save(author)
-    expect(repository.findBySurname('Tasty')).toEqual([author])
+    const author1 = new Author('Tom', 'Tasty')
+    const author2 = new Author('Jenny', 'Hasty')
+    repository.save(author1)
+    repository.save(author2)
+    expect(repository.findBySurname('Tasty')).toEqual([author1])
   })
 
   it('finds all authors', () => {

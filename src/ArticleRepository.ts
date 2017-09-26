@@ -3,7 +3,7 @@ import Author from './Author'
 
 export default class ArticleRepository {
 
-    private articles: Article []
+    private articles: Article[]
 
     public constructor() {
         this.articles = []
@@ -13,19 +13,18 @@ export default class ArticleRepository {
         this.articles.push(article)
     }
 
-    public findByAuthor(author: Author)  {
+    public findByAuthor(author: Author) {
 
-        let articleArray: Array<Article> = []
+        const result: Article[] = []
 
-        this.articles.forEach(article => {
+        this.articles.forEach((article) => {
             if (article.author === author) {
-                articleArray.push(article)
+                result.push(article)
             }
-        });
+        })
 
-        return articleArray
+        return result
     }
-
 
     public findAll() {
         return this.articles

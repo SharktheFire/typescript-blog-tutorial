@@ -2,7 +2,7 @@ import Author from './Author'
 
 export default class AuthorRepository {
 
-    private authors: Author []
+    private authors: Author[]
 
     public constructor() {
         this.authors = []
@@ -13,8 +13,10 @@ export default class AuthorRepository {
     }
 
     public findBySurname(surname: string) {
-        for (surname in this.authors) {
-            return this.authors
+        for (const author of this.authors) {
+            if (author.surname === surname) {
+                return [author]
+            }
         }
     }
 
