@@ -9,12 +9,6 @@ describe('ArticleRepository', () => {
       repository = new ArticleRepository()
     })
 
-  it('saves an article', () => {
-      const author = new Author('Tom', 'Tasty')
-      const article = new Article({ author, content: 'some content', headline: 'some headline' })
-      repository.save(article)
-    })
-
   it('finds article by author', () => {
       const author = new Author('Tom', 'Tasty')
       const article = new Article({ author, content: 'some content', headline: 'some headline' })
